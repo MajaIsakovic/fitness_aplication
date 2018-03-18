@@ -1,0 +1,24 @@
+//side we offer  
+.wrap-list{
+    @include responsive(tablet){
+        display: flex;
+    }
+}
+
+.side-list{
+    list-style-type: square;
+    @include responsive(tablet){
+        margin: auto;
+        padding-right: 4rem;
+    } 
+
+    @include responsive(phone){
+        padding-right: 4rem;
+    }
+}
+
+.side-li{
+    font-size: 2rem;
+    color: $color_main_purple;
+    text-indent: 1rem;
+}

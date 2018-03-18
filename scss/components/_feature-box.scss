@@ -1,0 +1,23 @@
+//feature boxes section content
+.feature-box{
+    background-color: rgba($color_main_purple, .8);
+    font-size: 1.5rem;
+    padding: 2.5rem;
+    text-align: center;
+    border-radius: 3px;
+    @include shadow-small;
+    color: $color_white;
+    transition: transform .3s;
+
+    &__icon{
+        font-size: 6rem;
+        display: inline-block;
+        background-image: linear-gradient(to right,$color_light_grey, $color_main_pink);
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+
+    &:hover{
+        transform: translateY(-1.5rem) scale(1.04);
+    }
+}

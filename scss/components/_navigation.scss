@@ -1,0 +1,52 @@
+.navigation{
+    width: 100%;
+    min-height: 50px;
+    border-bottom: 3px solid $color_main_pink;
+
+    @include responsive(phone){
+        display: none;
+    }
+
+    @include responsive(tablet){
+        display: none;
+    }
+}
+
+.logo{
+    background-image: url(../images/barbell.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    display: inline-block;
+    background-color: $color_white;
+    min-height: 90px;
+    width: 20%;
+}
+
+.ul-list{
+    float: right;
+    text-align: left;
+    width: 80%;
+    font-size: 2rem;
+    background-color: $color_main_grey;
+
+    li{
+        display: inline-block;
+        padding: 2.9rem 2.75rem;
+
+        a{
+            text-decoration: none;
+            color: $color_white;
+            display: inline-block;
+            padding-bottom: .2rem;
+
+            &:hover{
+                color: $color_main_pink;
+                @include transition;
+            }
+
+            &.current{             
+                border-bottom: 2px solid  $color_main_pink;      
+            }
+        }
+    }
+}

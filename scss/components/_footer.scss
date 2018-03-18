@@ -1,0 +1,12 @@
+footer {
+    background: $color_main_grey;
+    color: $color_white;
+	width: 100%;
+	padding: 5rem 0;
+    text-align: left;
+    font-size: $default_font_size;
+
+    @include responsive(phone){
+        text-align: center;
+    }
+}

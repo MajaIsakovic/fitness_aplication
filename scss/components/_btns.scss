@@ -1,0 +1,41 @@
+//wrapper for learn more btn
+.wrapp-btn{
+    @include responsive(tablet){
+        display: flex;
+        margin-top: 2.5rem;
+    }
+}
+
+.learn-more{
+    font-size: $default_font_size;
+    color: $color_main_purple;
+    margin-top: 1rem;
+    font-weight: 700;
+    display: inline-block;
+    padding: .8rem;
+    text-decoration: none;
+    border-bottom: 1px solid $color_main_purple;
+
+    @include responsive(tablet){
+        margin: auto;
+    }
+
+    &:hover{
+        transform: translateY(-2px);
+        background-color: $color_main_purple;
+        color: $color_white;
+        transform: all .2s;
+        border-bottom: 1px solid $color_white;
+        @include shadow-small;
+    }
+
+    &:active{
+        @include shadow-small;
+        transform: translateY(0px);
+    }
+}
+
+// side burger manu btn
+#close-btn{
+    font-size: 2rem;
+}

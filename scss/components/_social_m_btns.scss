@@ -1,0 +1,51 @@
+//social media
+.wrap-btns{
+  @include responsive(phone){
+    display: flex;
+  }
+}
+
+.right-btns{
+  float: right;
+  @include clearfix;
+  @include responsive(phone){
+      margin: auto;
+      padding-top: 3rem;
+  }
+}
+
+.fa {
+    padding: 1.5rem;
+    width:  5rem;
+    text-align: center;
+    text-decoration: none;
+    margin: 1rem .5rem;
+    border-radius: 50%;
+
+    &:hover {
+        opacity: 0.8;
+        background-color: $color_main_purple;
+        color: $color_main_pink;
+        @include transition;
+    }
+    
+    &-facebook {
+      background: $color_main_purple;
+      color: $color_white;
+    }
+  
+    &-instagram {
+      background: $color_main_purple;
+      color: $color_white;
+    }
+  
+    &-twitter {
+      background: $color_main_purple;
+      color: $color_white;
+    }
+
+    &-youtube{
+        background: $color_main_purple;
+        color: $color_white;
+    }
+  }

@@ -1,0 +1,52 @@
+//burger manu for mobile and tablet resolution
+.burger-manu{   
+        width: 100%;
+        min-height: 10rem;
+        border-bottom: 3px solid $color_main_pink;
+        background-color: $color_main_grey;
+        text-align: center;
+        display: none;
+
+        @include responsive(tablet){
+            display: inline-block;
+        }
+}
+
+.open-slide{
+    float: right;
+    display: inline-block;
+    padding-right: 2rem;
+    padding-top: 2rem;
+}
+
+.side-nav{   
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background: $color_main_grey;
+    opacity: 0.9;
+    overflow-x: hidden;
+    padding-top: 50px;
+    transition: 0.5s;
+
+    a{
+        padding: 1rem 1rem 1rem 3px;
+        text-decoration: none;
+        font-size: 1.8rem;
+        color: $color_white;
+        display: block;
+        transition: 0.4s;
+        font-weight: bold;
+
+        &:hover{
+            color: $color_main_pink;
+        }
+
+        &.current{
+            color: $color_main_pink;
+        }
+    }
+}

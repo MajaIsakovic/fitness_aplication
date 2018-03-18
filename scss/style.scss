@@ -1,0 +1,20 @@
+@import "abstracts/mixins";
+@import "abstracts/vars";
+
+@import "base/base"; 
+@import "base/typografy";
+@import "base/utilities";
+
+@import "components/btns";
+@import "components/burger_manu";
+@import "components/navigation";
+@import "components/feature-box";
+@import "components/form";
+@import "components/social_m_btns";
+@import "components/side_list";
+@import "components/footer";
+
+@import "pages/home";
+
+@import "leyout/grid";
+@import "leyout/header";

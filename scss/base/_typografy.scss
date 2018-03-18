@@ -1,0 +1,54 @@
+body{
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    line-height: 1.7;
+    color: $color_main_grey;
+}
+
+.heading-primary{
+    padding-top: 200px;
+    font-size: 5rem;
+    display: block;
+}
+
+.heading-secondary{
+    font-size: 3rem;
+}
+
+.heading-secondary-burger{
+    color: $color_white;
+    display: inline-block;
+    font-size: 2.8rem;
+    background-image: linear-gradient(to right, $color_main_pink, $color_white);
+    -webkit-background-clip: text;
+    color: transparent;
+    padding-top: 2rem;
+}
+
+.heading-tertiary-form {
+    font-size: 3rem;
+    text-transform: uppercase;
+    @include gradient_letters;
+}
+
+.heading-fourth{
+    font-size: 3.5rem;
+    padding-top: 4rem;
+    @include gradient_letters;
+
+    @include responsive(tablet){
+        text-align: center;
+    }
+}
+
+.heading-about{
+    font-size: 4rem;
+    padding-bottom: 4rem;
+    @include gradient_letters;
+}
+
+.paragraf-about{
+    font-size: 2rem;
+    color: $color_main_purple;
+    text-align: justify;
+}

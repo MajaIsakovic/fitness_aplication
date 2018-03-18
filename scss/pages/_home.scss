@@ -1,0 +1,55 @@
+// home -section about
+.section-padding{
+    padding: 15rem 0;
+}
+
+.picture-wrapper:first-child{
+    margin-bottom: -60px; //aplys for tablet and phone only
+}
+
+.picture{
+    display: inline-block;
+    width: 120%;
+    margin-top: 2rem;
+    border-radius: 3px;
+    z-index: 10;
+    transition: all .5s;
+    margin-right: 2rem;
+
+    @include responsive(tablet){
+        width: 40%;
+    }
+
+    &:hover{
+        transform: scale(1.01) translateY(-.7rem);
+        box-shadow: 0 2.5rem 4rem rgba($color_main_purple, .5);
+    }
+}
+
+// home - section features
+.section-features{
+    padding: 15rem 0;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($color_light_grey, .7),
+        rgba($color_main_pink, .7)), 
+        url(../images/happycurves.jpg);
+        background-size: cover;
+        background-position: top;
+}
+
+//home form section
+.form-section{
+    padding: 15rem 0;
+}
+
+//home setion map
+.section-map{
+    
+    .map{
+        width: 100%;
+        min-height: 400px;
+        margin-bottom: -5px;
+        border: 0;
+    }
+}

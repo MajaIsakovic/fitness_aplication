@@ -1,0 +1,30 @@
+.u-margin-bottom-small{
+    margin-bottom: 2rem;
+}
+
+.u-margin-bottom-medium{
+    margin-bottom: 4rem;
+}
+
+.center{
+    text-align: center;
+}
+
+.pink{
+    color: $color_main_pink;
+    @include responsive(phone){
+        display: inline-block;
+        text-align: center;
+    }
+}
+
+.center-headings{
+    text-align: center;
+    color: $color_white;
+    padding-top: 7rem;
+}
+
+.paragraf-style{
+    font-size: 1.8rem;
+    @include gradient_letters;
+}

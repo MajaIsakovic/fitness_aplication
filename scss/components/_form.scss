@@ -1,0 +1,60 @@
+//form
+.form{
+    max-width: 100%;
+    background-color: $color_main_pink;
+    opacity: .9;
+    padding: 4rem 4rem;
+    border-radius: 3px;
+    @include shadow-small;
+    font-size: $default_font_size;
+    font-weight: 700;
+    color: $color_white;
+}
+
+.form-group{
+    max-width: 600px;
+    margin: 0 auto;
+
+    .label{
+        text-transform: uppercase;
+        display: inline-block;
+        padding-top: 1rem;
+    }
+        
+    .input{
+        width: 100%;
+        padding: 1rem;
+        font-size: $default_font_size;
+        color: $color_main_purple;
+        border-radius: 3px;
+    }
+}  
+
+.submit-btn{
+    padding: 1rem 3rem;
+    border-radius: 3px;
+    border: 2px solid $color_main_pink;
+    float: right;
+    background-color: $color_white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: $color_main_grey;
+    font-weight: 700;
+
+    &:hover{
+        background-color: $color_main_purple;
+        color: $color_white;
+        @include shadow-small;
+        transform: translateY(-2px);
+        cursor: pointer;
+    }
+       
+    &:active{
+        box-shadow: 0 .5rem 1rem rgba($color_black, .15);
+        transform: translateY(0px);
+    }      
+}
+
+.submit-wrap{
+    padding: 2rem 2rem;
+}
